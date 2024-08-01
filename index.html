@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS link,list and image</title>
+<style>
+
+a:link,:visited
+{
+  background-color:green;
+ color:white;
+  text-decoration: none;
+ font-size: 20px;
+   display: inline;
+  padding: 20px 40px;
+ margin-top: 40px;
+
+  
+  }
+
+a:hover{
+  border: 3px solid green;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+ font-size: 20px;
+  display: inline;
+  padding: 20px 40px;
+  margin-top: 40px;
+ 
+ 
+}
+#color {
+  list-style-type: square;
+  background-color: yellow;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  
+  }
+li::marker{
+  color: red;
+}
+
+#s1 {
+  display: inline;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+#s2 {
+display: inline-block;
+width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+#s3 {
+display: block;
+width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+
+}
+img{
+ position: absolute; 
+ z-index: -1;
+ 
+
+}
+</style>
+
+
+
+</head>
+<body>
+<a href=>This is a link</a>
+ 
+  
+ <ul id="color">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola </li>
+</ul><br>
+
+<img src="backimage.avif" alt="color">
+ <h1>This is a heading</h1>
+ <p>Because the image has a z-index of -1,it will be placed behined the text.</p>
+ <br><br>
+
+
+<h1 style="margin-top: 200px;">The display property</h1>
+<h2>display:inline</h2>
+<div>
+<p>this is text this is text this is text <span id="s1">hello</span> <span id="s1">there</span> this is text this is text this is text</p>
+</div>
+
+<h2>display: inline-block</h2>
+<div>
+  <p>this is text this is text this is text <span id="s2">hello</span> <span id="s2">there</span> this is text this is text this is text</p>
+</div>
+<h2>display: block</h2>
+<div><p>this is text this is text this is text <span id="s3">hello</span> <span id="s3">there</span> this is text this is text this is text</p>
+</div>
+
+</body>
+</html>
